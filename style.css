@@ -1,0 +1,107 @@
+/* Réinitialisation des styles par défaut pour tous les éléments */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+    background-color: black;
+}
+
+/* Définition des variables de couleurs personnalisées */
+:root {
+    --bg-color: #1f242d;
+    /* Couleur de fond principale */
+    --second-bg-color: #323946;
+    /* Couleur de fond secondaire */
+    --text-color: #0ef;
+    /* Couleur du texte principal */
+}
+
+/* Réglage de la taille de police de base et masquage du défilement horizontal */
+html {
+    font-size: 62.5%;
+    /* Équivalent à 10 pixels pour faciliter les calculs */
+    overflow-x: hidden;
+    /* Masquage du défilement horizontal */
+}
+
+/* Styles pour l'en-tête */
+.header {
+    position: fixed;
+    /* Position fixe pour rester en haut de la page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    /* Utilisation de la couleur de fond principale */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    /* Couche d'empilement pour rester au-dessus des autres éléments */
+}
+
+/* Styles pour le logo dans l'en-tête */
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    /* Utilisation de la couleur de texte principale */
+    font-weight: 600;
+    cursor: default;
+}
+
+/* Styles pour les liens de la barre de navigation */
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    /* Utilisation de la couleur de texte principale */
+    margin-left: 4rem;
+    transition: 3s;
+    /* Transition douce sur les changements de style */
+}
+
+/* Styles pour les liens actifs ou survolés dans la barre de navigation */
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    /* Utilisation d'une couleur principale différente */
+}
+
+/* Styles pour l'icône de menu */
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    /* Utilisation de la couleur de texte principale */
+    display: none;
+    /* Initialisation masquée, probablement affichée avec JavaScript */
+}
+
+/* Styles pour la section "home" */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-contents {
+    text-align: left;
+    margin-top: 350px;
+    justify-items: center;
+    color: white;
+}
+
+/* Styles pour le titre dans la section "home" */
+.home-contents h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-img {
+    margin-top: 350px;
+    place-items: center;
+}
